@@ -5,8 +5,7 @@
 }
 
 body {
-  min-height: 100vh;
-  font-size: 1.2vw;
+  min-height: 100vh;  
 }
 
 
@@ -35,7 +34,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: medium;
+  font-size: 1rem;
 }
 
 nav a:hover {
@@ -86,6 +85,7 @@ nav li:first-child {
   background-color: lightgray;
   margin: auto;
   padding: 2vh;
+  box-shadow: 3px 3px 5px rgba(122, 122, 122, 0.808);
 }
 
 
@@ -102,7 +102,7 @@ nav li:first-child {
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: x-large;
+  font-size: 2rem;
   
 }
 
@@ -115,7 +115,7 @@ nav li:first-child {
 }
 
 .introduction{
-  font-size: large;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 800px) {
