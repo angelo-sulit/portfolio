@@ -6,6 +6,7 @@
   <title>Angelo Sulit | Contact</title>
   <link rel="stylesheet" href="style.css">
   <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
   <nav>
@@ -42,13 +43,32 @@
   </script>
 
 <div class="containerContact">
-    <div class="headerContact">      
-      <div class="contactText">
-        <h1 align="middle" class="h1Contact">Contact Me!</h1>
-        <h3 align="middle" class="pContact">Feel free to send me a message or email to start our conversation</h3>
-        </div>
+  <div class="headerContact">      
+    <div class="contactText">
+      <div class ="upperHalf">
+        <div class="h1Contact">Contact Me!</div>
+        <br>
+        <div class="pContact">Feel free to send me a message or email to start our conversation.</div>
       </div>
+        <div class="lowerHalf">
+          <a href="https://github.com/angelo-sulit" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/angelo-sulit-611658354/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>  
     </div>
+    <div class="gmailContainer">
+      <form action="https://api.web3forms.com/submit" method="POST" class="gmailMessage">
+        <input type="hidden" name="access_key" value="bcf43aef-d979-4212-936c-fa8ef41d59bb">
+        <input type="text" name="name" placeholder="Full Name" class="contactInput" required>
+        <input type="text" name="email" placeholder="Email Address" class="contactInput" required>
+        <textarea name="message" placeholder="Your Message" class="contactInput" required></textarea>
+        <button type="submit">Submit <i class="bi bi-send"></i></button>
+      </form>
+    </div>
+  </div>
 </div>
 
 </body>
