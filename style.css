@@ -255,6 +255,237 @@ nav li:first-child {
       font-size: large;
   }
 }
+
+                                                                             /* TECHSTACK */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 52vh;
+  overflow: visible;
+  background-color: rgba(241, 241, 239, 0.959);
+  margin: auto;
+  padding: 2vh;
+  box-shadow: 10px 10px 5px rgba(14, 13, 13, 0.568);
+  animation: slideFromSides 1s ease-in-out;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  padding: auto;
+  z-index: 10;
+}
+
+.techContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 70vw;
+  height: auto;
+  padding: 4vh 3vw;
+}
+
+.progLang{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 30vw;
+  min-width: 500px;
+  height: auto;
+  min-height: 40vh; 
+  padding: 1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-top: 10px;
+  box-shadow: 0 0 8px rgba(252, 85, 196, 0.6), 0 0 20px rgba(250, 175, 175, 0.4);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.progLang:hover{
+  transform: scale(1.03);
+}
+
+.upperPart {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2vw;
+  height: auto;
+  width: 90%;
+  font-size: 1rem;
+  font-style: oblique;
+}
+
+.lowerPart1{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 33%;
+  width: 90%;
+}
+
+.lowerPart2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 32%;
+  width: 90%;
+}
+
+.card{
+  padding: 6px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.plContainer {
+  padding: 4px 16px;
+}
+
+.devTools{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 30vw;
+  min-width: 500px;
+  height: auto;
+  min-height: 40vh; 
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-top: 10px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  box-shadow: 0 0 8px rgba(252, 85, 196, 0.6), 0 0 20px rgba(250, 175, 175, 0.4);
+}
+
+.devTools:hover {
+  transform: scale(1.03);
+  
+}
+
+.dtTitle {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2vw;
+  height: auto;
+  width: 90%;
+  font-size: 1rem;
+  font-style: oblique;
+}
+
+.dtBody{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 65%;
+  width: 90%;
+}
+
+@media (max-width: 1437px) {
+  .card {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .techContainer {
+    min-width: 350px;
+  }
+
+  .lowerPart1{
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .progLang {
+    min-width: 300px;
+  }
+
+  .upperPart {
+    font-size: .7rem;
+  }
+
+  .devTools {
+    min-width: 300px;
+  }
+
+  .dtTitle {
+    font-size: .7rem;
+  }
+
+  .card {
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: .7rem;
+    overflow: hidden;
+    min-width: auto;
+    min-height: 60px;
+  }
+  
+}
+
+@media (max-width:400px) {
+  
+  .techContainer{
+    min-width: 300px;
+  }
+
+  .progLang {
+    min-width: 250px;
+  }
+
+  .upperPart {
+    font-size: .6rem;
+  }
+
+  .devTools {
+    min-width: 250px;
+  }
+
+  .dtTitle {
+    font-size: 0.6rem;
+  }
+
+  .card {
+    font-size: 0.5rem;
+  }
+}
+
                                                                              /* CONTACT */
 
 .containerContact {
@@ -299,7 +530,7 @@ nav li:first-child {
   min-width: 300px;
   height: auto;
   min-height: 30vh; 
-  padding: 1rem;
+  padding: 1;
   box-sizing: border-box;
 }
 
@@ -448,7 +679,7 @@ a i:hover{
   }
 
   a i{
-    font-size: 4vh;
+    font-size: 2.4rem;
   }
   
 }
@@ -462,9 +693,4 @@ a i:hover{
     font-size: 1rem;
   }
 }
-
-
-
-
-
 
