@@ -284,6 +284,7 @@ nav li:first-child {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 70vw;
   height: auto;
@@ -305,7 +306,8 @@ nav li:first-child {
   border-radius: 12px;
   margin-left: 20px;
   margin-top: 10px;
-  box-shadow: 0 0 8px rgba(252, 85, 196, 0.6), 0 0 20px rgba(250, 175, 175, 0.4);
+  margin-right: 10px;
+  box-shadow:  0 0 8px #faafaf, 0 0 20px rgb(252, 85, 196);
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
@@ -382,7 +384,7 @@ nav li:first-child {
   margin-left: 20px;
   margin-top: 10px;
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-  box-shadow: 0 0 8px rgba(252, 85, 196, 0.6), 0 0 20px rgba(250, 175, 175, 0.4);
+  box-shadow:  0 0 8px #faafaf, 0 0 20px rgb(252, 85, 196);
 }
 
 .devTools:hover {
@@ -419,6 +421,10 @@ nav li:first-child {
   .card {
     font-size: 1.4rem;
   }
+
+  .devTools{
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -434,6 +440,8 @@ nav li:first-child {
 
   .progLang {
     min-width: 300px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .upperPart {
@@ -442,6 +450,8 @@ nav li:first-child {
 
   .devTools {
     min-width: 300px;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .dtTitle {
@@ -467,6 +477,8 @@ nav li:first-child {
 
   .progLang {
     min-width: 250px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .upperPart {
@@ -475,6 +487,8 @@ nav li:first-child {
 
   .devTools {
     min-width: 250px;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .dtTitle {
