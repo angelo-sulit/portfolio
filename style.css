@@ -288,7 +288,7 @@ nav li:first-child {
   flex-wrap: wrap;
   width: 70vw;
   height: auto;
-  padding: 4vh 3vw;
+  padding: 4vh 2vw;
 }
 
 .progLang{
@@ -306,7 +306,7 @@ nav li:first-child {
   border-radius: 12px;
   margin-left: 20px;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   box-shadow:  0 0 8px #faafaf, 0 0 20px rgb(252, 85, 196);
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
@@ -383,6 +383,7 @@ nav li:first-child {
   border-radius: 12px;
   margin-left: 20px;
   margin-top: 10px;
+  margin-right: 20px;
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
   box-shadow:  0 0 8px #faafaf, 0 0 20px rgb(252, 85, 196);
 }
@@ -417,13 +418,13 @@ nav li:first-child {
   width: 90%;
 }
 
-@media (max-width: 1437px) {
+@media (max-width: 1700px) {
   .card {
     font-size: 1.4rem;
   }
 
   .devTools{
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
