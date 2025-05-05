@@ -57,12 +57,19 @@ nav a {
   font-size: 1rem;
 }
 
-nav a:hover {
+nav li:nth-child(2) a:hover,
+nav li:nth-child(3) a:hover,
+nav li:nth-child(4) a:hover {
   background-color: gray;
 }
 
 nav li:first-child {
   margin-right: auto;
+}
+
+nav li:first-child a:hover{
+  transition: transform 0.3s ease;
+  transform: scale(1.2);
 }
 
 .sidebar {
@@ -178,6 +185,9 @@ nav li:first-child {
 }
 
 @media (max-width: 800px) {
+  .logoAS {
+    height: 10vh;
+  }
   .menu-button{
       display: block;
   }
@@ -255,6 +265,98 @@ nav li:first-child {
       font-size: large;
   }
 }
+
+.endContainer {
+  height: 19vh;
+}
+
+                                                                    /* ABOUT ME */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 52vh;
+  overflow: visible;
+  background-color: rgba(241, 241, 239, 0.959);
+  margin: auto;
+  padding: 2vh;
+  box-shadow: 10px 10px 5px rgba(14, 13, 13, 0.568);
+  animation: slideFromSides 1s ease-in-out;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  padding: auto;
+  z-index: 10;
+}
+
+.aboutContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70vw;
+  height: auto;
+  min-height: 55vh;
+  padding: 4vh 2vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.upperAbout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: auto;
+  min-height: 22vh;
+  overflow: hidden;
+  padding: 0 3vw;
+  margin-bottom: 2vh;
+}
+
+.lowerAbout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: auto;
+  min-height: 22vh;
+  padding: 0 3vw;
+}
+
+.aboutMe {
+  font-size:1.4rem;
+  text-align: center;
+}
+
+.abtME {
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+
+@media (max-width: 800px) {
+  .aboutMe {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutMe {
+    font-size: 1rem;
+  }
+}
+
 
                                                                              /* TECHSTACK */
 .container {
@@ -353,22 +455,43 @@ nav li:first-child {
 .card{
   padding: 6px;
   flex-direction: row;
+  width: auto;
+  min-width: 140px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardJava {
+  padding: 6px;
+  flex-direction: row;
+  width: auto;
+  min-width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card:hover,
+.cardJava:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 8px;
 }
 
-.card:hover {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 .plContainer {
   padding: 4px 16px;
+  font-size: 1rem;
 }
 
+.plContainerJava {
+  margin-left: 0px;
+  margin-right: 16px;
+  font-size: 1rem;
+}
 .devTools{
   display: flex;
   flex-direction: column;
@@ -414,11 +537,21 @@ nav li:first-child {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 65%;
+  height: 33%;
   width: 90%;
 }
 
-@media (max-width: 1700px) {
+.dtBody2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 32%;
+  width: 90%;
+}
+
+@media (max-width: 1635px) {
   .card {
     font-size: 1.4rem;
   }
@@ -435,13 +568,15 @@ nav li:first-child {
   }
 
   .lowerPart1{
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    height: 110px;
   }
 
   .progLang {
     min-width: 300px;
-    margin-left: 0;
+    margin-left: 20px;
     margin-top: 0;
   }
 
@@ -451,7 +586,7 @@ nav li:first-child {
 
   .devTools {
     min-width: 300px;
-    margin-left: 0;
+    margin-left: 20px;
     margin-top: 20px;
   }
 
@@ -465,9 +600,34 @@ nav li:first-child {
     font-size: .7rem;
     overflow: hidden;
     min-width: auto;
-    min-height: 60px;
+    height: 110px;
   }
-  
+
+  .cardJava {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: .7rem;
+    overflow: hidden;
+    min-width: auto;
+    height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .plContainer, .plContainerJava {
+    font-size: .8rem;
+  }
+
+  .card:hover, .cardJava:hover {
+    box-shadow: none;
+    transition: none;
+    border-radius: none;
+  }
+
+  .plContainerJava {
+    margin-left: 12px;
+  }
+
 }
 
 @media (max-width:400px) {
@@ -478,17 +638,18 @@ nav li:first-child {
 
   .progLang {
     min-width: 250px;
-    margin-left: 0;
+    margin-left: 18px;
     margin-top: 0;
   }
 
   .upperPart {
     font-size: .6rem;
+    margin-bottom: 10px;
   }
 
   .devTools {
     min-width: 250px;
-    margin-left: 0;
+    margin-left: 18px;
     margin-top: 20px;
   }
 
@@ -498,6 +659,10 @@ nav li:first-child {
 
   .card {
     font-size: 0.5rem;
+  }
+
+  .plContainer, .plContainerJava {
+    font-size: .7rem;
   }
 }
 
@@ -533,6 +698,9 @@ nav li:first-child {
   flex-wrap: wrap;
   width: 70vw;
   height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
 }
 
 .contactText{
@@ -709,3 +877,7 @@ a i:hover{
   }
 }
 
+
+.endPart{
+  height: 36vh;
+}
