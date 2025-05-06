@@ -1,122 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angelo Sulit | Tech stack</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-</head>
-<body>
-  <nav>
-    <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-      </svg></a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="techstack.html">TECH STACK</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-    <ul>
-      <li class="logoAS p-0 m-0">
-        <a href="index.html">
-          <img src="logoAS.jpg" alt="Homepage" style="height: 10vh;">
-        </a>
-      </li>
-      <li class="hideOnSmallDev"><a href="about.html">ABOUT</a></li>
-      <li class="hideOnSmallDev"><a href="techstack.html">TECH STACK</a></li>
-      <li class="hideOnSmallDev"><a href="contact.html">CONTACT</a></li>
-      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-      </svg></a></li>
-    </ul>
-  </nav>
-
-  <script>
-    function showSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
-    }
-    
-    function hideSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-    }   
-  </script>
-
-<div class="container">
-  <div class="techContainer">
-    <div class="progLang">
-        <div class="upperPart">
-          <h1>Programming Language</h1>
-        </div>
-        <div class="lowerPart1">
-          <div class="card">
-            <img src="techImage/C.png" style="min-width: 20px; width: auto; height: 50px;" alt="Custome size image">
-              <div class="plContainer">
-                <h4>C</h4>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo Sulit | Tech stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="bodyBackground">
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="techstack.html">TECH STACK</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="logoAS p-0 m-0">
+            <a href="index.html">
+              <img src="otherImage/logoAS.jpg" alt="Homepage" style="height: 10vh;">
+            </a>
+          </li>
+          <li class="hideOnSmallDev">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="hideOnSmallDev">
+            <a href="techstack.html">TECH STACK</a>
+          </li>
+          <li class="hideOnSmallDev">
+            <a href="contact.html">CONTACT</a>
+          </li>
+          <li class="menu-button" onclick=showSidebar()>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex' }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none' }   
+      </script>
+      <div class="container">
+        <div class="techContainer">
+          <div class="progLang">
+              <div class="upperPart">
+                <h1>Programming Language</h1>
+              </div>
+              <div class="lowerPart1">
+                <div class="card">
+                  <img src="techImage/C.png" style="min-width: 20px; width: auto; height: 50px;" alt="Custome size image">
+                    <div class="plContainer">
+                      <h4>C</h4>
+                    </div>
+                </div>
+                <div class="cardJava">
+                  <img src="techImage/java.webp" style="min-width: 33px; width: 90px; height: auto;" alt="Custome size image">
+                    <div class="plContainerJava">
+                      <h4>Java</h4>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="techImage/Html.png" style="min-width: 33px; width: auto; height: 50px;" alt="Custome size image">
+                    <div class="plContainer">
+                      <h4>HTML</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="lowerPart2">
+                <div class="card">
+                  <img src="techImage/Javascript.png" style="min-width: 33px; width: auto; height: 50px;" alt="Custome size image">
+                    <div class="plContainer">
+                      <h4>Javascript</h4>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="techImage/Css.png" style="min-width: 33px; width: auto; height: 50px;" alt="Custome size image">
+                    <div class="plContainer">
+                      <h4>CSS</h4>
+                    </div>
+                </div>
               </div>
           </div>
-          <div class="cardJava">
-            <img src="techImage/java.webp" style="min-width: 33px; width: 90px; height: auto;" alt="Custome size image">
-              <div class="plContainerJava">
-                <h4>Java</h4>
-              </div>
-          </div>
-          <div class="card">
-            <img src="techImage/Html.png" style="min-width: 33px; width: auto; height: 50px;" alt="Custome size image">
-              <div class="plContainer">
-                <h4>HTML</h4>
-              </div>
-          </div>
-        </div>
-        <div class="lowerPart2">
-          <div class="card">
-            <img src="techImage/Javascript.png" style="min-width: 33px; width: auto; height: 50px;" alt="Custome size image">
-              <div class="plContainer">
-                <h4>Javascript</h4>
-              </div>
-          </div>
-          <div class="card">
-            <img src="techImage/Css.png" style="min-width: 33px; width: auto; height: 50px;" alt="Custome size image">
-              <div class="plContainer">
-                <h4>CSS</h4>
-              </div>
-          </div>
-        </div>
-    </div>
-    <div class="devTools">
-      <div class="dtTitle">
-        <h1>Developement Tools</h1>
-      </div>
-      <div class="dtBody">
-        <div class="card">
-          <img src="techImage/Andstud.png" style="min-width: 33px; width: auto; height: 53px;" alt="Custome size image">
-            <div class="plContainer">
-              <h4>Android Studio</h4>
+          <div class="devTools">
+            <div class="dtTitle">
+              <h1>Developement Tools</h1>
             </div>
-        </div>
-        <div class="card">
-          <img src="techImage/Vscode.png" style="min-width: 33px; width: auto; height: 45px;" alt="Custome size image">
-            <div class="plContainer">
-              <h4>VS Code</h4>
-            </div>      
-        </div>
-      </div>
-      <div class="dtBody2">
-        <div class="card">
-          <img src="oracle.avif" style="min-width: 33px; width: auto; height: 73px;" alt="Custome size image">
-            <div class="plContainer">
-              <h4>Oracle Apex</h4>
+            <div class="dtBody">
+              <div class="card">
+                <img src="techImage/Andstud.png" style="min-width: 33px; width: auto; height: 53px;" alt="Custome size image">
+                  <div class="plContainer">
+                    <h4>Android Studio</h4>
+                  </div>
+              </div>
+              <div class="card">
+                <img src="techImage/Vscode.png" style="min-width: 33px; width: auto; height: 45px;" alt="Custome size image">
+                  <div class="plContainer">
+                    <h4>VS Code</h4>
+                  </div>      
+              </div>
             </div>
+            <div class="dtBody2">
+              <div class="card">
+                <img src="TechImage/oracle.avif" style="min-width: 33px; width: auto; height: 73px;" alt="Custome size image">
+                  <div class="plContainer">
+                    <h4>Oracle Apex</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </div> 
+      <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.cells.min.js"></script>
+      <script>
+        VANTA.CELLS({
+          el: "#bodyBackground",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          color1: 0xffffff,
+          color2: 0x141407
+        })
+        </script>
     </div>
-  </div>
-</div>
-<div class="endContainer">
-  <!--Extra Space-->
-</div>   
-
-</body>
+  </body>
 </html>

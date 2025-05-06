@@ -8,7 +8,11 @@
 }
 
 body {
-  min-height: 100vh; 
+  min-height: 120vh;
+}
+
+#bodyBackground {
+  min-height: 120vh;
 }
 
 nav {
@@ -22,6 +26,7 @@ nav {
   opacity: 0;
   z-index: 999;
   position: relative;
+  margin-bottom: 70px;
 }
 
 @keyframes slideFromTop {
@@ -33,6 +38,11 @@ nav {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.logoAS {
+  height: auto;
+  display: flex;
 }
 
 nav ul {
@@ -116,7 +126,6 @@ nav li:first-child a:hover{
   background-color: rgba(241, 241, 239, 0.959);
   margin: auto;
   padding: 2vh;
-  box-shadow: 10px 10px 5px rgba(73, 73, 73, 0.568);
   animation: slideFromSides 1.4s ease-in-out;
   animation-delay: 0.5s;
   opacity: 0;
@@ -142,7 +151,7 @@ nav li:first-child a:hover{
   width: 30vh;
   min-width: 20vh; 
   height: auto; 
-  border: 0.2vw solid black;
+  border: 0.2vw solid #f8f8f8;
   border-radius: 30%;
 }
 
@@ -159,7 +168,7 @@ nav li:first-child a:hover{
 .line-with-text::after {
   content: "";  
   flex: 2;
-  border-bottom: 0.2vw solid gray;
+  border-bottom: 0.2vw solid #f8f8f8;
   margin: 0 5vw;
 }
 
@@ -169,6 +178,7 @@ nav li:first-child a:hover{
   animation-duration: 1.4s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
+  color: whitesmoke;
   opacity: 0;
 }
 
@@ -185,9 +195,10 @@ nav li:first-child a:hover{
 }
 
 @media (max-width: 800px) {
-  .logoAS {
-    height: 10vh;
+  nav{
+    margin-bottom: 40px;
   }
+
   .menu-button{
       display: block;
   }
@@ -230,6 +241,10 @@ nav li:first-child a:hover{
 }
 
 @media (max-width:400px) {
+  nav{
+    margin-bottom: 20px;
+  }
+
     body{
       font-size: 2vw;
   }
@@ -266,10 +281,6 @@ nav li:first-child a:hover{
   }
 }
 
-.endContainer {
-  height: 19vh;
-}
-
                                                                     /* ABOUT ME */
 .container {
   display: flex;
@@ -284,7 +295,6 @@ nav li:first-child a:hover{
   background-color: rgba(241, 241, 239, 0.959);
   margin: auto;
   padding: 2vh;
-  box-shadow: 10px 10px 5px rgba(14, 13, 13, 0.568);
   animation: slideFromSides 1s ease-in-out;
   animation-delay: 1s;
   opacity: 0;
@@ -307,6 +317,14 @@ nav li:first-child a:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);     /* Very light background */
+  border-radius: 16px;
+  padding: 2rem;
+  color: #f8f8f8;
+  backdrop-filter: blur(10px);              /* Frosted glass */
+  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional depth */
 }
 
 .upperAbout {
@@ -372,13 +390,18 @@ nav li:first-child a:hover{
   background-color: rgba(241, 241, 239, 0.959);
   margin: auto;
   padding: 2vh;
-  box-shadow: 10px 10px 5px rgba(14, 13, 13, 0.568);
   animation: slideFromSides 1s ease-in-out;
   animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   padding: auto;
   z-index: 10;
+  background: transparent;     /* Very light background */
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  border: none;
 }
 
 .techContainer {
@@ -391,6 +414,14 @@ nav li:first-child a:hover{
   width: 70vw;
   height: auto;
   padding: 4vh 2vw;
+  background: rgba(255, 255, 255, 0.05);     /* Very light background */
+  border-radius: 16px;
+  padding: 2rem;
+  color: #f8f8f8;
+  backdrop-filter: blur(10px);              /* Frosted glass */
+  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional depth */
 }
 
 .progLang{
@@ -409,12 +440,12 @@ nav li:first-child a:hover{
   margin-left: 20px;
   margin-top: 10px;
   margin-right: 20px;
-  box-shadow:  0 0 8px #faafaf, 0 0 20px rgb(252, 85, 196);
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .progLang:hover{
   transform: scale(1.03);
+  box-shadow:  0 0 8px #bbadad
 }
 
 .upperPart {
@@ -508,11 +539,11 @@ nav li:first-child a:hover{
   margin-top: 10px;
   margin-right: 20px;
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-  box-shadow:  0 0 8px #faafaf, 0 0 20px rgb(252, 85, 196);
 }
 
 .devTools:hover {
   transform: scale(1.03);
+  box-shadow:  0 0 8px #bbadad
   
 }
 
@@ -576,7 +607,7 @@ nav li:first-child a:hover{
 
   .progLang {
     min-width: 300px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 0;
   }
 
@@ -586,7 +617,7 @@ nav li:first-child a:hover{
 
   .devTools {
     min-width: 300px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;
   }
 
@@ -638,7 +669,7 @@ nav li:first-child a:hover{
 
   .progLang {
     min-width: 250px;
-    margin-left: 18px;
+    margin-left: 0px;
     margin-top: 0;
   }
 
@@ -649,7 +680,7 @@ nav li:first-child a:hover{
 
   .devTools {
     min-width: 250px;
-    margin-left: 18px;
+    margin-left: 0px;
     margin-top: 20px;
   }
 
@@ -681,13 +712,18 @@ nav li:first-child a:hover{
   background-color: rgba(241, 241, 239, 0.959);
   margin: auto;
   padding: 2vh;
-  box-shadow: 10px 10px 5px rgba(14, 13, 13, 0.568);
   animation: slideFromSides 1s ease-in-out;
   animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   padding: auto;
   z-index: 10;
+  background: transparent;     /* Very light background */
+  border-radius: 16px;
+  padding: 2rem;
+  color: #f8f8f8;
+  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  border: none;
 }
 
 .headerContact {
@@ -701,6 +737,14 @@ nav li:first-child a:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);     /* Very light background */
+  border-radius: 16px;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);              /* Frosted glass */
+  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional depth */
 }
 
 .contactText{
@@ -743,12 +787,12 @@ nav li:first-child a:hover{
 
 a i{
   font-size: 5vh;
-  color: black;
+  color: rgb(255, 255, 255);
   transition: 0.3s;
 }
 
 a i:hover{
-  color: rgb(252, 85, 196);
+  color: rgb(0, 0, 0);
 }
 
 .gmailContainer{
@@ -868,6 +912,12 @@ a i:hover{
 }
 
 @media (max-width: 400px) {
+  .headerContact {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
   .h1Contact{
     font-size: 2rem;
   }
@@ -877,7 +927,3 @@ a i:hover{
   }
 }
 
-
-.endPart{
-  height: 36vh;
-}
