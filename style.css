@@ -13,6 +13,8 @@ body {
 
 #bodyBackground {
   min-height: 120vh;
+  background-position: center;
+  background-size: cover;
 }
 
 nav {
@@ -396,11 +398,11 @@ nav li:first-child a:hover{
   animation-fill-mode: forwards;
   padding: auto;
   z-index: 10;
-  background: transparent;     /* Very light background */
+  background: transparent;     
   border-radius: 16px;
   padding: 2rem;
   color: white;
-  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  -webkit-backdrop-filter: blur(10px);      
   border: none;
 }
 
@@ -409,19 +411,19 @@ nav li:first-child a:hover{
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 70vw;
   height: auto;
   padding: 4vh 2vw;
-  background: rgba(255, 255, 255, 0.05);     /* Very light background */
+  background: rgba(255, 255, 255, 0.05);     
   border-radius: 16px;
   padding: 2rem;
   color: #f8f8f8;
-  backdrop-filter: blur(10px);              /* Frosted glass */
-  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  backdrop-filter: blur(10px);              
+  -webkit-backdrop-filter: blur(10px);     
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional depth */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
 }
 
 .progLang{
@@ -431,7 +433,7 @@ nav li:first-child a:hover{
   align-items: center;
   flex: 1;
   width: 30vw;
-  min-width: 500px;
+  min-width: 450px;
   height: auto;
   min-height: 40vh; 
   padding: 1;
@@ -530,7 +532,7 @@ nav li:first-child a:hover{
   align-items: center;
   flex: 1;
   width: 30vw;
-  min-width: 500px;
+  min-width: 350px;
   height: auto;
   min-height: 40vh; 
   box-sizing: border-box;
@@ -596,6 +598,9 @@ nav li:first-child a:hover{
 
   .techContainer {
     min-width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
   }
 
   .lowerPart1{
@@ -606,8 +611,7 @@ nav li:first-child a:hover{
   }
 
   .progLang {
-    min-width: 300px;
-    margin-left: 0px;
+    min-width: 290px;
     margin-top: 0;
   }
 
@@ -617,7 +621,6 @@ nav li:first-child a:hover{
 
   .devTools {
     min-width: 300px;
-    margin-left: 0px;
     margin-top: 20px;
   }
 
@@ -665,11 +668,11 @@ nav li:first-child a:hover{
   
   .techContainer{
     min-width: 300px;
+
   }
 
   .progLang {
     min-width: 250px;
-    margin-left: 0px;
     margin-top: 0;
   }
 
@@ -680,7 +683,6 @@ nav li:first-child a:hover{
 
   .devTools {
     min-width: 250px;
-    margin-left: 0px;
     margin-top: 20px;
   }
 
@@ -718,11 +720,11 @@ nav li:first-child a:hover{
   animation-fill-mode: forwards;
   padding: auto;
   z-index: 10;
-  background: transparent;     /* Very light background */
+  background: transparent;     
   border-radius: 16px;
   padding: 2rem;
   color: #f8f8f8;
-  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  -webkit-backdrop-filter: blur(10px);     
   border: none;
 }
 
@@ -737,14 +739,14 @@ nav li:first-child a:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);     /* Very light background */
+  background: rgba(255, 255, 255, 0.05);    
   border-radius: 16px;
   padding: 2rem;
   color: rgb(255, 255, 255);
-  backdrop-filter: blur(10px);              /* Frosted glass */
-  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  backdrop-filter: blur(10px);              
+  -webkit-backdrop-filter: blur(10px); 
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional depth */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .contactText{
@@ -892,8 +894,13 @@ a i:hover{
 }
 
 @media (max-width: 800px) {
+
+  .headerContact {
+    min-width: 365px;
+  }
   .h1Contact{
     font-size: 2.3rem;
+    margin: 0 auto;
   }
 
   .pContact{
