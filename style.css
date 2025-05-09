@@ -8,11 +8,13 @@
 }
 
 body {
-  min-height: 120vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 #bodyBackground {
-  min-height: 120vh;
+  min-height: 100vh;
+  height: auto;
   background-position: center;
   background-size: cover;
 }
@@ -163,7 +165,6 @@ nav li:first-child a:hover{
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  
 }
 
 .line-with-text::before,
@@ -319,14 +320,14 @@ nav li:first-child a:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);     /* Very light background */
+  background: rgba(255, 255, 255, 0.05);    
   border-radius: 16px;
   padding: 2rem;
   color: #f8f8f8;
-  backdrop-filter: blur(10px);              /* Frosted glass */
-  -webkit-backdrop-filter: blur(10px);      /* For Safari */
+  backdrop-filter: blur(10px);             
+  -webkit-backdrop-filter: blur(10px);     
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Optional depth */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
 }
 
 .upperAbout {
@@ -334,7 +335,7 @@ nav li:first-child a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 95%;
   height: auto;
   min-height: 22vh;
@@ -348,7 +349,7 @@ nav li:first-child a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 95%;
   height: auto;
   min-height: 22vh;
@@ -525,6 +526,7 @@ nav li:first-child a:hover{
   margin-right: 16px;
   font-size: 1rem;
 }
+
 .devTools{
   display: flex;
   flex-direction: column;
