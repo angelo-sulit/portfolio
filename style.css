@@ -586,6 +586,16 @@ nav li:first-child a:hover{
   width: 90%;
 }
 
+.dtBody3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 32%;
+  width: 90%;
+}
+
 @media (max-width: 1635px) {
   .card {
     font-size: 1.4rem;
